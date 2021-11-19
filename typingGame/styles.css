@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #524374;
+  }
+  
+  body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke
+  }
+  
+  .container {
+    background-color: #391d7a;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #391d7a;
+    font-weight: bold;
+  }
+
+  .score {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 3rem;
+    color: #391d7a;
+    font-weight: bold;
+
+  }
+  .quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+  }
+  
+  .quote-input {
+    background-color: transparent;
+    border: 2px solid #391d7a;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+  }
+  
+  .quote-input:focus {
+    border-color: black;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 8rem;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #391d7a;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .button:hover {background-color: #321575}
+
+  .button:active {
+  background-color: 321575;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
